@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Requests - Smart Health</title>
+    <link rel="stylesheet" href="request.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <span class="logo-box">SH</span>
+                <span class="logo-text">Smart Health</span>
+            </div>
+            
+            <div class="nav-auth">
+                <img src="https://ui-avatars.com/api/?name=User&background=0056D2&color=fff" alt="Profile" class="nav-avatar">
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <div class="request-header">
+            <div>
+                <h1>My Blood Requests</h1>
+                <p>Track and manage your active help requests</p>
+            </div>
+            <button class="btn-primary-small"><i class="fa-solid fa-plus"></i> Post New Request</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active">All Requests (3)</button>
+            <button class="tab-btn">Active</button>
+            <button class="tab-btn">Fulfilled</button>
+        </div>
+
+        <div class="request-list">
+            
+            <div class="request-card border-urgent">
+                <div class="card-main">
+                    <div class="blood-type urgent-bg">B+</div>
+                    <div class="request-details">
+                        <h3>Patient: Amit Verma</h3>
+                        <p><i class="fa-solid fa-hospital"></i> City General Hospital, Unit 4</p>
+                        <p><i class="fa-solid fa-clock"></i> Posted: 2 hours ago</p>
+                    </div>
+                    <div class="request-status">
+                        <span class="badge badge-urgent">Urgent</span>
+                        <p><strong>4</strong> Donors Notified</p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-outline-small">Edit Details</button>
+                    <button class="btn-success-small">Mark as Fulfilled</button>
+                    <button class="btn-danger-small"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="request-card">
+                <div class="card-main">
+                    <div class="blood-type fulfilled-bg">O-</div>
+                    <div class="request-details">
+                        <h3>Patient: Saira Banu</h3>
+                        <p><i class="fa-solid fa-hospital"></i> Metro Care Clinic</p>
+                        <p><i class="fa-solid fa-calendar"></i> Posted: Feb 12, 2026</p>
+                    </div>
+                    <div class="request-status">
+                        <span class="badge badge-fulfilled">Fulfilled</span>
+                        <p><i class="fa-solid fa-check-double"></i> 2 Donors matched</p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-outline-small">View History</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

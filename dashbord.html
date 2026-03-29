@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Health</title>
+    <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-box">SH</span>
+                <span class="logo-text">Smart Health</span>
+            </div>
+           
+            <div class="sidebar-footer">
+                <a href="home.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="welcome-text">
+                    <h1>Welcome back, Rahul!</h1>
+                    <p>Ready to save lives today?</p>
+                </div>
+                <div class="user-meta">
+                    <div class="notif"><i class="fa-regular fa-bell"></i><span class="dot"></span></div>
+                    <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=0056D2&color=fff" alt="User" class="avatar">
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>05</h3>
+                        <p>Total Donations</p>
+                    </div>
+                    <div class="stat-icon blue"><i class="fa-solid fa-heart-pulse"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>15</h3>
+                        <p>Lives Impacted</p>
+                    </div>
+                    <div class="stat-icon green"><i class="fa-solid fa-people-group"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>B+</h3>
+                        <p>Blood Group</p>
+                    </div>
+                    <div class="stat-icon red"><i class="fa-solid fa-droplet"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <h3>Eligible</h3>
+                        <p>Donation Status</p>
+                    </div>
+                    <div class="stat-icon gold"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Recent Blood Requests Nearby</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Blood Type</th>
+                                <th>Hospital</th>
+                                <th>Urgency</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amit Verma</td>
+                                <td class="blood-badge">O+</td>
+                                <td>City General Hospital</td>
+                                <td><span class="status urgent">Urgent</span></td>
+                                <td><button class="btn-donate">Donate Now</button></td>
+                            </tr>
+                            <tr>
+                                <td>Saira Banu</td>
+                                <td class="blood-badge">AB-</td>
+                                <td>Metro Care Clinic</td>
+                                <td><span class="status routine">Routine</span></td>
+                                <td><button class="btn-donate">Donate Now</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

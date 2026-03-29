@@ -1,0 +1,146 @@
+/* Awareness Page Wrapper */
+.awareness-page {
+    padding: 60px 0;
+    background-color: #fcfcfc;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-intro h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.page-intro p {
+    color: #777;
+    font-size: 16px;
+}
+
+/* Filter Chips */
+.filter-chips {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.chip {
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.chip:hover {
+    border-color: #0056D2;
+    color: #0056D2;
+}
+
+.chip.active {
+    background: #0056D2;
+    color: white;
+    border-color: #0056D2;
+}
+
+/* Article Grid */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.article-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-body {
+    padding: 25px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.tag-blue { background: #e3f2fd; color: #1565c0; }
+.tag-green { background: #e8f5e9; color: #2e7d32; }
+.tag-orange { background: #fff3e0; color: #e65100; }
+
+.date {
+    font-size: 12px;
+    color: #999;
+}
+
+.article-body h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.article-body p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #0056D2;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+    .filter-chips {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+}

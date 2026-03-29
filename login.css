@@ -1,0 +1,155 @@
+/* --- Global Styles (Reuse from previous) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Container Styles --- */
+.login-container {
+    background: #fff;
+    width: 100%;
+    max-width: 450px; /* Slightly narrower than signup */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    background: #0056D2;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- Form Styles --- */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+.input-field:focus-within {
+    border-color: #0056D2;
+    box-shadow: 0 0 0 3px rgba(0, 86, 210, 0.1);
+}
+
+.input-field i {
+    color: #999;
+    margin-right: 12px;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* --- Remember & Forgot Password --- */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember-me label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #0056D2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+}
+
+/* --- Button & Footer --- */
+.btn-primary {
+    width: 100%;
+    background-color: #0056D2;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0044a8;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a {
+    color: #0056D2;
+    text-decoration: none;
+    font-weight: 600;
+}

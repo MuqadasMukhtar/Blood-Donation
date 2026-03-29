@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency - Smart Health</title>
+    <link rel="stylesheet" href="emergency.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <span class="logo-box">SH</span>
+                <span class="logo-text">Smart Health</span>
+            </div>
+        
+            <div class="nav-auth">
+                <a href="signup.html" class="btn-register">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="emergency-page">
+        <section class="emergency-hero">
+            <div class="container">
+                <div class="panic-header">
+                    <i class="fa-solid fa-circle-exclamation pulse-icon"></i>
+                    <h1>Emergency Assistance</h1>
+                    <p>Immediate help is just a click away. Choose an option below.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="emergency-grid">
+                <div class="panic-card red-bg">
+                    <i class="fa-solid fa-truck-medical"></i>
+                    <h2>Ambulance</h2>
+                    <p>Call for immediate medical transport</p>
+                    <a href="tel:102" class="call-btn">Call 102</a>
+                </div>
+
+                <div class="panic-card blue-bg">
+                    <i class="fa-solid fa-droplet"></i>
+                    <h2>Urgent Blood</h2>
+                    <p>Connect with a 24/7 blood bank</p>
+                    <a href="tel:108" class="call-btn">Call 108</a>
+                </div>
+
+                <div class="panic-card dark-bg">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Police</h2>
+                    <p>Report an accident or emergency</p>
+                    <a href="tel:100" class="call-btn">Call 100</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container nearby-section">
+            <div class="section-title">
+                <h2>Nearby Emergency Centers</h2>
+                <p>Top rated hospitals within 5km of your location</p>
+            </div>
+            
+            <div class="hospital-list">
+                <div class="hospital-item">
+                    <div class="hosp-info">
+                        <h3>City General Hospital</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> 1.2 km away</span>
+                    </div>
+                    <div class="hosp-actions">
+                        <button class="btn-sm-outline">View Map</button>
+                        <button class="btn-sm-call"><i class="fa-solid fa-phone"></i></button>
+                    </div>
+                </div>
+
+                <div class="hospital-item">
+                    <div class="hosp-info">
+                        <h3>Metro Care 24/7</h3>
+                        <span><i class="fa-solid fa-location-dot"></i> 2.8 km away</span>
+                    </div>
+                    <div class="hosp-actions">
+                        <button class="btn-sm-outline">View Map</button>
+                        <button class="btn-sm-call"><i class="fa-solid fa-phone"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container first-aid-strip">
+            <div class="strip-content">
+                <i class="fa-solid fa-kit-medical"></i>
+                <p>Not sure what to do? Read our <strong>Quick First Aid Guide</strong> while waiting for help.</p>
+                <a href="awareness.html">View Guide</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

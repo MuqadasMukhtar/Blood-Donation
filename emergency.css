@@ -1,0 +1,177 @@
+/* Emergency Page Base */
+.emergency-page {
+    background-color: #fff9f9;
+    padding-bottom: 60px;
+}
+
+.emergency-hero {
+    background-color: #E02B2B;
+    color: white;
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.panic-header h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.panic-header p {
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+/* Pulse Icon Animation */
+.pulse-icon {
+    font-size: 50px;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { transform: scale(0.95); text-shadow: 0 0 0 rgba(255, 255, 255, 0.7); }
+    70% { transform: scale(1); text-shadow: 0 0 20px rgba(255, 255, 255, 0); }
+    100% { transform: scale(0.95); text-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+/* Emergency Grid */
+.emergency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: -60px; /* Overlap hero */
+}
+
+.panic-card {
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 15px 35px rgba(224, 43, 43, 0.2);
+    transition: 0.3s;
+}
+
+.panic-card:hover {
+    transform: translateY(-10px);
+}
+
+.panic-card i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.panic-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.panic-card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.red-bg { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.blue-bg { background: linear-gradient(135deg, #0056D2, #003d99); }
+.dark-bg { background: linear-gradient(135deg, #2c3e50, #000000); }
+
+.call-btn {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Nearby Hospital List */
+.nearby-section {
+    margin-top: 60px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.hospital-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.hosp-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.hosp-info span {
+    font-size: 14px;
+    color: #777;
+}
+
+.hosp-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-sm-outline {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-sm-call {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* First Aid Strip */
+.first-aid-strip {
+    margin-top: 50px;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.strip-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #856404;
+}
+
+.strip-content i {
+    font-size: 24px;
+}
+
+.strip-content a {
+    color: #0056D2;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .emergency-grid {
+        grid-template-columns: 1fr;
+    }
+    .hospital-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
